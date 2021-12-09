@@ -1,0 +1,403 @@
+/* ------------------ESTILOS GENERALES------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "header header"
+                        "main aside"
+                        "footer footer";
+    background-image: url(../recursos/pexels-furknsaglam-3109671.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+    background-color: #FA1E0E;
+    border-radius: 15px 0 0 15px;
+    margin: 30px 0 30PX 0PX;
+}
+footer{
+    grid-area: footer;
+    background-color: #9c1313;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+/* Styless Header index ////////////////////////////////////////// */
+header img{
+    width: 100%;
+}
+header nav{
+    background-color: #FFBE0F;
+    box-shadow: 0px -10px 9px 2px #FFBE0F;
+    margin-top: 2px;
+    padding: 10px;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a:hover{
+    text-shadow: 0px 4px 5px  red;
+    font-weight: bold;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+/* Styless Header Ropa ---------------------------------------------------*/
+header .TRopa{
+    text-align: center;
+    color: rgb(0, 0, 194);
+    background-color: #FA1E0E;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0px 4px 5px  rgb(77, 77, 141);
+    margin: 20px 55vw 0px 35vw;
+    padding: 2px;
+    width: 100px;
+    border-radius: 10px;
+}
+/* Styless Header Articulos------------------------------------------- */
+header .TArticulo{
+    text-align: center;
+    color: rgb(0, 0, 194);
+    background-color: #FA1E0E;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0px 4px 5px  rgb(77, 77, 141);
+    margin: 20px 55vw 0px 35vw;
+    padding: 2px;
+    width: 135px;
+    border-radius: 10px;
+}
+/* Styless Header Sucursales------------------------------------ */
+header .TSucursales{
+    text-align: center;
+    color: rgb(0, 0, 194);
+    background-color: #FA1E0E;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0px 4px 5px  rgb(77, 77, 141);
+    margin: 20px 55vw 0px 35vw;
+    padding: 2px;
+    width: 145px;
+    border-radius: 10px;
+}
+/* Styless Main index /////////////////////////////////////////////// */
+main figure{
+    width: 10%;
+}
+main figure img{
+  width: 100%;
+}
+main article .Ti-img{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+main article .Ti-img h1{
+    color: #FFBE0F;
+    text-shadow: black 10px 10px 10px;
+    font-size: 6vw;
+    padding-top: 3%;
+}
+main article .Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main article section>h2,.Info p,.ConArticulo p, .ConRopa p, .AsideP p, .ConRopa div p, h6{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    width: 80%;
+    text-align: center;
+    color: #FFBE0F;
+    font-weight: bold;
+    text-shadow: black 0px 4px 5px ;
+}
+main article .Info .TModelo{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    width: 80%;
+    text-align: center;
+    color: #FFBE0F;
+    font-weight: bold;
+    text-shadow: black 0px 4px 3px ;
+}
+main article .Info iframe{
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px  black;
+    width: 169px;
+}
+main article .Info div{
+    margin-bottom: 2%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+main article .Info iframe{
+    border: #FFBE0F 10px solid;
+    margin: 10px 40px 0 10px;
+}
+/* Styless Main Ropa ----------------------------------------- */
+main article .ConRopa, .ConArticulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 5px 50px 5px;
+    background-color: #FFBE0F;
+    margin: 0 115px 30px 115px;
+    border-radius: 0px 0px 30px 30px;
+    
+}
+main article .ConRopa div, .ConArticulo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 215px;
+    height: 430px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #FA1E0E;
+    border: #9c1313 solid 4px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 9px 2px  #9c1313;
+
+    
+}
+main article .ConRopa div img{
+    width: 100%;
+    height: 72.5%;
+    border-radius: 15px;
+}
+main article .ConRopa div p, .ConArticulo div p{
+    padding: 10px;
+}
+main article div span{
+    background-color: #9c1313;
+    border-radius: 5px;
+}
+main article div span:hover{
+    box-shadow: 0px 0px 9px 10px  #9c1313;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Styless Main Articulos ----------------------------------- */
+main article .ConArticulo div{
+    width: 215px;
+    height: 345px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #FA1E0E;
+    border: #9c1313 solid 4px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 9px 2px  #9c1313;
+}
+main article .ConArticulo div img{
+    width: 100%;
+    height: 62.5%;
+    border-radius: 15px;
+}
+main article .ConArticulo div .pEx{
+    margin-bottom: 20px;
+}
+/* Styless Main Sucursales ----------------------------------------------*/
+main article .ConSucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 5px 50px 5px;
+    background-color: #FFBE0F;
+    margin: 0 115px 30px 115px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+main article .ConSucursales div{
+    display: flex;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #FA1E0E;
+    box-shadow: 0px 4px 9px 2px  #9c1313;
+}
+main article .ConSucursales div a{
+    color: blue;
+}
+main article .ConSucursales .SubConInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+main article .ConSucursales .InfoS{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px 2px  #9c1313;
+    padding: 10px;
+}
+main article .ConSucursales .InfoS th:nth-child(1){
+    border: solid black;
+    border-radius: 10px 0 0 0;
+}
+main article .ConSucursales .InfoS th:nth-child(3){
+    border: solid black;
+    border-radius: 0px 10px 0 0;
+}
+.InfoS th{
+    border: solid black;
+    padding: 5px;
+}
+main article .ConSucursales .InfoS .td1{
+    border: solid black 2px;
+    border-radius: 0px 0px 0 10px;
+}
+main article .ConSucursales .InfoS .td3{
+    border: solid black 2px;
+    border-radius: 0px 0px 10px 0px;
+}
+main article .ConSucursales .InfoS td{
+    border: black solid 2px;
+}
+dl{
+    padding: 50px;
+}
+/* Style Main Contacto ---------------------------------------- */
+main article .ConContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 50px 50px 50px;
+    background-color: #FFBE0F;
+    margin: 0 115px 30px 115px;
+    border-radius: 0px 0px 30px 30px;
+}
+main article .ConContacto fieldset{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    width: 100%;
+    border: #9c1313 solid 4px;
+    border-radius: 20px;
+    background-color: #FA1E0E;
+    box-shadow: 0px 4px 9px 2px  #9c1313;
+}
+main article .ConContacto legend{
+    margin: 5px;
+    border: #9c1313 solid 4px;
+    border-radius: 10px;
+    background-color: #FA1E0E;
+    box-shadow: 0px 4px 9px 2px  #9c1313;
+}
+main article .ConSucursales .SubConMapa iframe{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    
+}
+main article .ConSucursales h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+fieldset legend{
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    color: #FFBE0F;
+    font-weight: bold;
+    text-shadow: black 0px 4px 5px;
+}
+fieldset label{
+    font-weight: bold;
+}
+.ConContacto hr{
+    width: 700px;
+}
+/* Styless Aside index ////////////////////////////////////////*/
+aside h3{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    color: blue;
+    background-color: #FFBE0F;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-shadow: 0px 4px 5px  red
+}
+aside .ropa{
+    color: blue;
+}
+
+aside .ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px 10px 20px;
+    width: 80%;
+    border: #9c1313 solid 4px;
+    border-radius: 20px ;
+    box-shadow: 10px 10px 10px  #9c1313;
+
+}
+aside .ofertas img{
+    width: 95%;
+    height: 95%;
+    padding: 5px;
+    border-radius: 20px;
+  
+}
+.oltop{
+    margin: 60px 30px 60px 80px;
+}
+.oltop ol{
+    text-align: center;
+    color: black;   
+}
+.oltop h6{
+    padding-left: 15px;
+}
+.oltop ol li a{
+    text-decoration: none;
+    color: black;
+    background-color: #9c1313;
+    border-radius: 10px;
+    padding: 3px;
+}
+/* Styless Footer index //////////////////////////////////////*/
+footer address{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0px 4px 5px  red;
+}
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer div img{
+    width: 30px;
+}
+footer div img:hover{
+    cursor: pointer;
+}
